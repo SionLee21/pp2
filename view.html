@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View Book</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>View Book</h2>
+  <div>
+    <label for="title" class="form-label">Title:</label>
+    <span id="title"></span>
+  </div>
+  <div>
+    <label for="author" class="form-label">Author:</label>
+    <span id="author"></span>
+  </div>
+  <div>
+    <label for="publisher" class="form-label">Publisher:</label>
+    <span id="publisher"></span>
+  </div>
+  <div>
+    <label for="year" class="form-label">Year:</label>
+    <span id="year"></span>
+  </div>
+  <div>
+    <label for="isbn" class="form-label">ISBN:</label>
+    <span id="isbn"></span>
+  </div>
+  <a href="edit.html" class="btn btn-warning">Edit</a>
+  <button onclick="confirmDelete()" class="btn btn-danger">Delete</button>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Sample book data
+    var book = {
+      title: 'Sample Book',
+      author: 'John Doe',
+      publisher: 'Sample Publisher',
+      year: 2022,
+      isbn: '1234567890'
+    };
+
+    // Display book details
+    document.getElementById('title').innerText = book.title;
+    document.getElementById('author').innerText = book.author;
+    document.getElementById('publisher').innerText = book.publisher;
+    document.getElementById('year').innerText = book.year;
+    document.getElementById('isbn').innerText = book.isbn;
+
+    function confirmDelete() {
+      if (confirm('Are you sure you want to delete this book?')) {
+        // Perform book deletion logic here
+        alert('Book deleted!');
+      }
+    }
+  </script>
+</body>
+</html>
