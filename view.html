@@ -63,5 +63,14 @@
       }
     }
   </script>
+  
+  <script>
+    function confirmDelete() {
+      return confirm("Are you sure you want to delete this book?");
+    }
+  </script>
+  
+  <button class="btn btn-danger btn-sm" onclick="return confirmDelete()">Delete</button>
+  
 </body>
 </html>

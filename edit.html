@@ -40,5 +40,13 @@
   </form>
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function confirmEdit() {
+      return confirm("Are you sure you want to save the changes?");
+    }
+  </script>
+  
+  <button class="btn btn-primary btn-sm" onclick="return confirmEdit()">Save Changes</button>
+  
 </body>
 </html>
