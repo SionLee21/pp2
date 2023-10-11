@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Edit Book</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
-  <!-- Bootstrap core CSS -->
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -36,7 +35,7 @@
       <label for="isbn" class="form-label">ISBN</label>
       <input type="text" class="form-control" id="isbn" placeholder="Enter ISBN" required>
     </div>
-    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <button class="btn btn-primary btn-sm" onclick="return confirmEdit()">Save Changes</button>
   </form>
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
@@ -46,7 +45,6 @@
     }
   </script>
   
-  <button class="btn btn-primary btn-sm" onclick="return confirmEdit()">Save Changes</button>
   
 </body>
 </html>

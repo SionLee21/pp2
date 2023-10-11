@@ -8,7 +8,6 @@
   <meta name="generator" content="Hugo 0.88.1">
   <title>Book CRUD · Bootstrap v5.1</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
-  <!-- Bootstrap core CSS -->
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .bd-placeholder-img {
@@ -24,7 +23,6 @@
       }
     }
   </style>
-  <!-- Custom styles for this template -->
   <link href="dashboard.css" rel="stylesheet">
   <link rel="stylesheet" href="my.css">
 </head>
@@ -129,7 +127,6 @@
             </div>
           </div>
         </div>
-        <!-- Book List Section -->
         <h2>Book List</h2>
         <table class="table table-striped">
           <thead>
@@ -144,11 +141,9 @@
             </tr>
           </thead>
           <tbody id="bookList">
-            <!-- Book entries will be displayed here -->
           </tbody>
         </table>
         <script>
-          // Sample data
           var books = [
             { title: 'Book 1', author: 'Author 1', publisher: 'Publisher 1', year: 2021, isbn: '1234567890' },
             { title: 'Book 2', author: 'Author 2', publisher: 'Publisher 2', year: 2022, isbn: '0987654321' },
@@ -161,7 +156,6 @@
             { title: 'Book 9', author: 'Author 9', publisher: 'Publisher 9', year: 2014, isbn: '9990001111' },
             { title: 'Book 10', author: 'Author 10', publisher: 'Publisher 10', year: 2013, isbn: '1212121212' }
           ];
-          // Display books in the list
           var bookList = document.getElementById('bookList');
           books.forEach(function(book, index) {
             var row = document.createElement('tr');
@@ -182,14 +176,11 @@
           });
           function deleteBook(index) {
             if (confirm("Are you sure you want to delete this book?")) {
-              // Perform book deletion logic here
-              // For this example, we'll simply remove the row from the UI
               var row = document.getElementById('bookList').rows[index];
               row.parentNode.removeChild(row);
             }
           }
         </script>
-        <!-- End Book List Section -->
       </main>
     </div>
   </div>
